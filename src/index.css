@@ -42,6 +42,18 @@ code {
   font-weight: 500;
   cursor: pointer;
 }
+@media screen and (max-width:760px) {
+  .navbar img {
+    width: 28px;
+    height: 28px;
+  }
+  .navbar ul {
+    gap : 15px;
+  }
+  .navbar ul li {
+    font-size: 16px;
+  }
+}
 
 /* css for header inside hero  */
 
@@ -88,7 +100,15 @@ header {
   color: white;
   transition: .3s;
 }
-
+@media screen and (max-width:760px) {
+  header {
+    margin: 10px;
+  }
+  .hero-btn {
+    padding: 10px 30px;
+    font-size: 1.3rem;
+  }
+}
 
 /* css for premium page  */
 .main {
@@ -157,12 +177,12 @@ header {
     overflow-x: hidden;
   }
   .main h4 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   letter-spacing: 0.1rem;
   line-height: 3rem;
   font-weight: 500;
   padding-top: 3px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   }
   .col-lg-4 h5 {
     font-size: 1.4rem;
@@ -174,7 +194,7 @@ header {
     right: 38%;
   }
   .price {
-    right:25%;
+    right:20%;
   }
 }
 
