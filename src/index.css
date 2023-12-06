@@ -5,9 +5,265 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Css for navbar */
+
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  /* background-color: yellow; */
+}
+.navbar img {
+  width: 35px;
+  height: 35px;
+}
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+.navbar ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* css for header inside hero  */
+
+header {
+  background-color: rgb(172, 172, 158); 
+  width: auto;
+  height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url('./images/hero.jpeg') center/cover;
+  object-fit: cover;
+  color: white;
+  margin: 20px 30px;
+}
+.hero {
+  text-align: center;
+}
+.hero h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.hero p {
+  max-width: 480px;
+  margin: 40px 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+.hero-btn {
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  background-color: white;
+  outline: none;
+  border: 2px solid white;
+  letter-spacing: 2px;
+  color: black;
+}
+.hero-btn:hover {
+  background-color: transparent;
+  color: white;
+  transition: .3s;
+}
+
+
+/* css for premium page  */
+.main {
+  text-align: center;
+
+}
+.main h4{
+  text-align: center;
+  margin: 20px 30px ;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  color: lightskyblue;
+  background-color: rgb(47, 46, 46);
+  line-height: 5rem;
+  padding-top: 5px;
+  padding-bottom: 12px;
+  margin-top: 0;
+}
+.col-lg-4 {
+  /* background-color: black; */
+  position: relative;
+  margin-top: 20px;
+}
+.col-lg-4 h5 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.row img {
+  width: 440px;
+  height: 470px;
+  object-fit: cover;
+  margin: 30px 0;
+
+}
+.btn2 {
+  padding: 3px 20px;
+  color: #444;
+  /* margin: 5px; */
+  position: absolute;
+  top: 80px;
+  right: 280px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.btn2:hover {
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid blue;
+  color: white;
+  font-weight: 400;
+}
+
+.price {
+  padding: 8px 60px;
+  background-color: whitesmoke;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  position: absolute;
+  top: 440px;
+  right: 200px;
+}
+
+@media screen and (max-width:750px) {
+  body {
+    overflow-x: hidden;
+  }
+  .main h4 {
+    font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  font-weight: 500;
+  padding-top: 3px;
+  padding-bottom: 10px;
+  }
+  .col-lg-4 h5 {
+    font-size: 1.4rem;
+  }
+  .row img {
+    width: 350px;
+  }
+  .btn2 { 
+    right: 38%;
+  }
+  .price {
+    right:25%;
+  }
+}
+
+/* videos section  */
+
+.video {
+  background: linear-gradient(to left, rgba(122, 117, 117, 0.5), rgba(122, 121, 121, 0.6), rgba(77, 76, 76, 0.6));
+  width: calc(100vw - 60px);
+  margin:20px auto;
+  text-align: center;
+  padding-top:30px ;
+}
+.video h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.player {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+.player p {
+  width: 40%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.btn-3 {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width : 750px) {
+  .video {
+    display: none;
+  }
+}
+
+/* footer section  */
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(240, 240, 239);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  margin-top: 18px;
+  font-size: 1.2rem;
+}
+@media screen and (max-width:750px){
+  footer {
+    height: 50px;
+  }
+  footer p {
+    font-size: 0.9rem;
+  }  
+}
+
+/* pricing section  */
+
+.pricing-1 {
+  background: linear-gradient(#706c6c, #888);
+  background-image: url('./images/black-1072366_640.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* object-fit: cover; */
+  background-attachment: fixed;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(254, 253, 253);
+}
+.inner {
+  text-align: center;
+}
+.inner h1 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.inner h2 {
+  margin: 0;
+}
+.inner ul {
+  list-style: none;
+}
+.inner ul li {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
