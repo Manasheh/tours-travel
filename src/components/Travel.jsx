@@ -11,7 +11,12 @@ function Travel({ price, setPrice, places, setPlaces }) {
     // const x = cost 
     // console.log(+cost)
     // const x = []
-  setPrice(price + cost )
+    // '$ 800'
+    cost = cost.split(' ')[1]; // ['$', '800']
+
+    cost = parseFloat(cost);
+
+  setPrice((oldPrice)=>oldPrice+cost);
   setPlaces([...places, name])
         
       }
